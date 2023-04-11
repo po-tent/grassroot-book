@@ -1,0 +1,119 @@
+// Bootstrap imports and variable overrides
+
+// Required
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+
+/////////////////////////////////////////////////////////////
+// Include custom variable default overrides here
+
+$blue: #39a2ae;
+$indigo: #6610f2; // bootstrap default
+$purple: #6f42c1; // bootstrap default
+$pink: #e83e8c; // bootstrap default
+$red: #dc3545; // bootstrap default
+$orange: #f4ad06;
+$yellow: #e5fb1f;
+$green: #28a745; // bootstrap default
+$teal: #52ffb8;
+$cyan: #17a2b8; // bootstrap default
+
+$primary: $yellow;
+$secondary: $blue; // bootstrap default
+$success: $green; // bootstrap default
+$info: $teal;
+$warning: $yellow; // bootstrap default
+$danger: $red; // bootstrap default
+$light: $gray-100; // bootstrap default
+$dark: #202030; // was gray-800
+
+// Update maps
+
+$colors: (
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $dark,
+  // was gray-800
+);
+
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+//////////
+
+$font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$headings-font-family: Montserrat, 'Open Sans', -apple-system,
+  BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji';
+$headings-font-weight: 800;
+
+$navbar-brand-font-size: $h3-font-size;
+
+$body-color: $dark;
+
+$input-btn-font-family: $headings-font-family;
+$input-btn-font-weight: 700;
+$btn-font-family: $headings-font-family;
+$btn-font-weight: 700;
+
+$btn-border-radius: 3rem;
+
+$input-border-radius: 3rem;
+$input-border-width: 0;
+$input-bg: rgba(255, 255, 255, 0.5);
+
+$dropdown-box-shadow: 2 0.5rem 1rem rgba($black, 0.175);
+$dropdown-border-radius: 10px;
+$dropdown-border-width: 0;
+
+/////////////////////////////////////////////////////////////
+
+// TODO remove unneeded
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/code';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/tables';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/transitions';
+@import '../node_modules/bootstrap/scss/dropdown';
+@import '../node_modules/bootstrap/scss/button-group';
+@import '../node_modules/bootstrap/scss/input-group';
+@import '../node_modules/bootstrap/scss/custom-forms';
+@import '../node_modules/bootstrap/scss/nav';
+@import '../node_modules/bootstrap/scss/navbar';
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/badge';
+@import '../node_modules/bootstrap/scss/alert';
+@import '../node_modules/bootstrap/scss/progress';
+@import '../node_modules/bootstrap/scss/media';
+@import '../node_modules/bootstrap/scss/close';
+@import '../node_modules/bootstrap/scss/modal';
+@import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/print';

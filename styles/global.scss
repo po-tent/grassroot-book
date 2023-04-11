@@ -1,0 +1,185 @@
+@import './custom.scss';
+@import './mixins.scss';
+
+// Global CSS
+
+.medium {
+  font-size: 0.86em;
+}
+
+.text-button {
+  font-family: $font-family-base;
+  font-size: 1em;
+}
+
+textarea {
+  resize: none;
+}
+
+.navbar {
+  @include drop-shadow-lg;
+  font-family: $headings-font-family;
+  font-weight: 700;
+}
+
+.navbar-brand,
+.logo {
+  font-weight: 800;
+  transform: rotate(-4deg);
+}
+
+.navbar-brand:after,
+.logo:after {
+  content: '.';
+}
+
+.form-label {
+  font-family: $headings-font-family;
+  font-weight: 600 !important;
+}
+
+.form-control.is-invalid {
+  border-width: 1px;
+}
+
+.auth-form {
+  width: 300px;
+}
+
+.auth-logo {
+  text-align: center;
+}
+
+.auth-button {
+  width: 100%;
+}
+
+.new-post-validation-error {
+  display: block !important;
+  text-align: right;
+  padding-right: 2px;
+  margin-top: -17px;
+  margin-bottom: 17px;
+}
+
+.new-post-submit-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.splash-container {
+  @include gradient-bg;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-center {
+  @media (min-width: 600px) {
+    @include glassmorphic;
+    padding: 30px;
+  }
+}
+
+// Glassmorphism
+
+$glass-card-radius: 15px;
+
+.glass-card {
+  @include glassmorphic;
+  @include drop-shadow-sm;
+  border-radius: $glass-card-radius;
+  border-width: 0;
+}
+
+.glass-card > .card-header {
+  border-top-left-radius: $glass-card-radius;
+  border-top-right-radius: $glass-card-radius;
+  border-width: 0;
+}
+
+.glass-card > .card-footer {
+  border-bottom-left-radius: $glass-card-radius;
+  border-bottom-right-radius: $glass-card-radius;
+  border-width: 0;
+}
+
+.gradient-glass-card {
+  @extend .glass-card;
+  background: linear-gradient(
+    253deg,
+    rgba(229, 251, 31, 0.4),
+    rgba(244, 173, 6, 0.4)
+  );
+  border-width: 0;
+}
+
+.glass-card-form {
+  @extend .glass-card;
+}
+
+.glass-card-form > .card-body {
+  margin: 0;
+  padding: 0;
+}
+
+.glass-card-textarea {
+  border-radius: $glass-card-radius;
+  padding: 12px 20px 48px 20px;
+}
+
+.soft-alert {
+  // Mostly transparent, for splash page
+  @include drop-shadow-sm;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: $glass-card-radius;
+}
+
+.circle {
+  border-radius: 1000px;
+}
+
+.comment-textarea {
+  border-radius: $glass-card-radius;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 12px 20px 48px 20px;
+}
+
+.circle-button {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border-width: 0;
+}
+
+.circle-button-small {
+  font-size: 1em;
+  text-align: center;
+  padding: 0;
+  padding-top: 3px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border-width: 0;
+}
+
+.dropdown-menu {
+  @include drop-shadow-sm;
+  font-family: $font-family-base;
+}
+
+.btn-group.special {
+  display: flex;
+}
+
+.special .btn {
+  flex: 1;
+  font-weight: 500;
+  font-size: 0.96em;
+}
